@@ -10,7 +10,7 @@ const videos = [
     title: "Cinematic Storytelling Edit",
     category: "Cinematic",
     duration: "7:42",
-    image: "https://i.ibb.co/PsscLN3v/karnan.jpg",
+    image: "https://i.ibb.co/BHP2jpRd/karna.jpg",
     link: "https://youtu.be/OACXYq-hkJY?si=r1n5dUHRiNgvNmC5",
     description:
       "A cinematic portrayal of Karna created using AI visuals, AI voice narration, and intense sound effects for a powerful experience.",
