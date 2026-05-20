@@ -13,7 +13,7 @@ export default function About() {
         </div>
 
         <p className="text-gray-400 text-sm mb-12 tracking-wide">
-          aswinvtk2001.com
+          aswinvtk2001@gmail.com
         </p>
 
         <p className="text-gray-300 text-md md:text-base leading-relaxed max-w-prose tracking-wide">
