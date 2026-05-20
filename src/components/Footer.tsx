@@ -1,6 +1,6 @@
 // Footer.tsx
 
-import { Mail } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -16,6 +16,13 @@ export default function Footer() {
         >
           <Mail size={18} />
           <span className="text-sm md:text-base">aswinvtk2001@gmail.com</span>
+        </a>
+        <a
+          href="tel:+919645675025"
+          className="flex items-center gap-3 px-5 py-3 rounded-full border border-white/10 bg-white/5 text-gray-300 hover:text-white hover:border-red-500/40 hover:bg-red-500/10 transition-all duration-300"
+        >
+          <Phone size={18} />
+          <span className="text-sm md:text-base">+91 96456 75025</span>
         </a>
       </div>
     </footer>
