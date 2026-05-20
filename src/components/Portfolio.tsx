@@ -48,15 +48,15 @@ export default function Portfolio() {
   return (
     <section
       id="portfolio"
-      className="min-h-screen bg-black px-6 md:px-16 py-24"
+      className="min-h-screen bg-black px-4 sm:px-6 md:px-12 lg:px-16 py-16 md:py-24"
     >
       {/* Heading */}
-      <div className="mb-14">
+      <div className="mb-10 md:mb-14">
         <p className="text-cyan-400 uppercase tracking-[0.3em] text-sm mb-3">
           Portfolio
         </p>
 
-        <h2 className="text-white font-black text-4xl md:text-5xl tracking-wide mb-2">
+        <h2 className="text-white font-black text-3xl sm:text-4xl md:text-5xl tracking-wide mb-3 leading-tight">
           FEATURED WORKS
         </h2>
 
@@ -67,12 +67,12 @@ export default function Portfolio() {
       </div>
 
       {/* Category Buttons */}
-      <div className="flex flex-wrap gap-4 mb-14">
+      <div className="flex flex-wrap gap-3 md:gap-4 mb-10 md:mb-14">
         {categories.map((category) => (
           <button
             key={category}
             onClick={() => setActiveCategory(category)}
-            className={`px-5 py-2 rounded-full border transition-all duration-300 text-sm tracking-wide
+            className={`px-4 md:px-5 py-2 rounded-full border transition-all duration-300 text-xs sm:text-sm tracking-wide
               ${
                 activeCategory === category
                   ? "bg-cyan-400 text-black border-cyan-400"
@@ -85,7 +85,7 @@ export default function Portfolio() {
       </div>
 
       {/* Video Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 md:gap-8">
         {filteredVideos.map((video) => (
           <motion.a
             href={video.link}
@@ -101,7 +101,7 @@ export default function Portfolio() {
               <img
                 src={video.image}
                 alt={video.title}
-                className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                className="w-full h-52 sm:h-60 md:h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 loading="eager"
                 decoding="async"
               />
@@ -129,9 +129,9 @@ export default function Portfolio() {
             </div>
 
             {/* Card Content */}
-            <div className="p-6">
+            <div className="p-4 md:p-6">
               <div className="flex items-center justify-between mb-3">
-                <h3 className="text-xl font-semibold text-white">
+                <h3 className="text-lg md:text-xl font-semibold text-white line-clamp-1">
                   {video.title}
                 </h3>
 
@@ -141,7 +141,7 @@ export default function Portfolio() {
                 />
               </div>
 
-              <p className="text-gray-400 text-sm leading-relaxed">
+              <p className="text-gray-400 text-sm leading-relaxed line-clamp-3">
                 {video.description}
               </p>
             </div>
